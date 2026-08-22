@@ -25,3 +25,9 @@
 1. 在 `content/posts/` 或 `content/moments/` 中新建 `.md` 文件。
 2. 修改 `config.json` 自定义站点信息。
 3. 启动服务即可访问。
+
+
+##目录结构
+
+详细的目录结构请查看：[目录结构概览.txt]
+
