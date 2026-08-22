@@ -1,39 +1,43 @@
-# MinecraftSniper博客模板
+# MinecraftSniper 博客模板
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+一个轻量、简洁、开箱即用的个人博客模板。
 
-#### 软件架构
-软件架构说明
+## 功能特性
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+- **Markdown 写文章**：在 `content/posts/` 目录下新建 `.md` 文件即可发布文章，支持标题、正文、列表、引用等标准 Markdown 语法。
+- **动态发布**：在 `content/moments/` 目录下新建 `.md` 文件即可发布短动态，适合随手记录。
+- **热更新**：修改任意 `.md` 文件或配置文件后，无需重启服务，浏览器刷新即可看到最新内容。
+- **内存缓存管理**：支持自动模式（`auto`）和手动模式（`true`/`false`），根据系统内存状态动态调整缓存策略，防止内存溢出。
+- **定时内存检查**：每 30 秒自动检测系统内存，内存紧张时自动降级为硬盘读取，保障服务稳定。
+- **四页面导航**：主页、文章列表、动态列表、关于我，结构清晰。
+- **视觉风格**：参考 HarmonyOS NEXT 的交互逻辑，支持液态玻璃质感和沉浸光效。
+- **响应式设计**：适配桌面端和移动端，手机浏览体验友好。
+- **站点配置**：通过 `config.json` 自定义站点标题、背景图、图标、端口、刷新间隔等内容路径。
+- **内存配置**：通过 `memorycache.json` 灵活控制缓存策略，支持自动/手动/禁用三种模式。
+- **日志系统**：控制台实时输出 + 按天轮转的日志文件存储，方便排查问题。
+- **低资源占用**：内存占用极低，可在 256MB 内存设备上运行。
+- **无数据库**：所有内容以 Markdown 文件存储，复制即备份，迁移无压力。
 
 
-#### 特技
+## 目录结构概览
+/
+├── server.js # 服务端核心
+├── memorycache.js # 内存缓存管理模块
+├── config.json # 站点配置文件
+├── memorycache.json # 内存缓存配置文件
+├── content/
+│ ├── home.md # 主页内容
+│ ├── about.md # 关于我页面
+│ ├── posts/ # 文章目录（放 .md 文件）
+│ └── moments/ # 动态目录（放 .md 文件）
+├── public/
+│ └── index.html # 前端页面
+├── image/ # 图片资源
+└── logs/ # 日志目录（自动生成）
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+
+## 使用方式
+
+1. 在 `content/posts/` 或 `content/moments/` 中新建 `.md` 文件。
+2. 修改 `config.json` 自定义站点信息。
+3. 启动服务即可访问。
