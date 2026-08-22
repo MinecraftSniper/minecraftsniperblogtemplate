@@ -31,3 +31,8 @@
 
 详细的目录结构请查看：[目录结构概览.txt]
 
+##版权信息
+
+**Copyright © 林鋆成 All Rights Reserved.**
+
+**Copyright © Minecraft狙击手 MinecraftSniper Minecraft-Sniper All Rights Reserved.**
