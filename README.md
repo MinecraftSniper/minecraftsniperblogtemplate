@@ -19,22 +19,6 @@
 - **无数据库**：所有内容以 Markdown 文件存储，复制即备份，迁移无压力。
 
 
-## 目录结构概览
-/
-├── server.js # 服务端核心
-├── memorycache.js # 内存缓存管理模块
-├── config.json # 站点配置文件
-├── memorycache.json # 内存缓存配置文件
-├── content/
-│ ├── home.md # 主页内容
-│ ├── about.md # 关于我页面
-│ ├── posts/ # 文章目录（放 .md 文件）
-│ └── moments/ # 动态目录（放 .md 文件）
-├── public/
-│ └── index.html # 前端页面
-├── image/ # 图片资源
-└── logs/ # 日志目录（自动生成）
-
 
 ## 使用方式
 
