@@ -1,0 +1,27 @@
+目录结构概览
+/
+├── server.js # 服务端核心
+├── memorycache.js # 内存缓存管理模块
+├── package.json # 项目依赖
+├── pnpm-lock.yaml # 依赖锁定文件
+│
+├── config.json # 站点配置文件
+├── memorycache.json # 内存缓存配置文件
+│
+├── content/ # 内容目录
+│ ├── home.md # 主页内容
+│ ├── about.md # 关于我页面
+│ ├── posts/ # 文章目录
+│ │ └── *.md # 文章文件
+│ └── moments/ # 动态目录
+│ └── *.md # 动态文件
+│
+├── public/ # 前端静态资源
+│ └── index.html # 前端页面
+│
+├── image/ # 图片资源
+│ ├── Minecraft.png # 背景图
+│ └── logo.png # 网站图标
+│
+└── logs/ # 日志目录（自动生成）
+└── app-YYYY-MM-DD.log # 按天轮转的日志文件
