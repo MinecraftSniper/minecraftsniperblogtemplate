@@ -29,7 +29,7 @@
 
 ## 目录结构
 
-详细的目录结构请查看：[目录结构概览.txt]
+详细的目录结构请查看：[目录结构概览.txt](https://gitee.com/Minecraft-Sniper/minecraftsniperblogtemplate/blob/master/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E6%A6%82%E8%A7%88.txt)
 
 ## 版权信息
 
